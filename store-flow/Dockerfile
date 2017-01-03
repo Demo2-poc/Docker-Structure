@@ -14,7 +14,14 @@ COPY guest-service.war /opt/tomcat/webapps/
 COPY ev-service.war /opt/tomcat/webapps/
 COPY dreamsapp.war /opt/tomcat/webapps/
 
-#COPY listenerapp-config.properties /opt/tomcat/lib/
+COPY ticketingapp-config.properties /opt/tomcat/lib/
+COPY ticketing-payload-service-config.properties /opt/tomcat/lib/
+COPY storeservice-config.properties /opt/tomcat/lib/
+COPY gxpapp-config.properties /opt/tomcat/lib/
+COPY gxpservice-config.properties /opt/tomcat/lib/
+COPY guestservice-config.properties /opt/tomcat/lib/
+COPY evservice-config.properties /opt/tomcat/lib/
+COPY dreamsapp-config.properties /opt/tomcat/lib/
 
 #Step1:sudo docker build -t storeflow:2 /tmp/docker_demo2/storeflow_docker
 #Step2:sudo docker run -d -p 8080:8080 storeflow:2 or  docker run -it --rm -p 8080:8080 storeflow:2
